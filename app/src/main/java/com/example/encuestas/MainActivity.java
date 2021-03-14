@@ -3,8 +3,10 @@ package com.example.encuestas;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -19,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
         registro = (TextView) findViewById(R.id.lbl_registro);
         inicio = (Button) findViewById(R.id.btn_iniciar);
         correo = (EditText) findViewById(R.id.tv_correo);
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, inicio.class);
+                Intent i = new Intent(MainActivity.this, basicInfo.class);
                 startActivity(i);
             }
         });

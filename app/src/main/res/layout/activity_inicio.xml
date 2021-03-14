@@ -2,43 +2,66 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     tools:context=".inicio" >
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="280dp"
-        android:layout_height="120dp"
-        android:text="Ficha de Identificación"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="280dp"
-        android:layout_height="120dp"
-        android:text="Estudio Socioeconómico"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="80px"
+            android:background="@drawable/menu"
+            >
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="280dp"
-        android:layout_height="120dp"
-        android:text="Entrevista"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.507" />
+            <Button
+                android:id="@+id/fichaide"
+                android:layout_width="270dp"
+                android:layout_height="140dp"
+                android:text="Ficha de Identificación"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.798"
+                android:layout_marginTop="200px"
+                android:layout_marginBottom="100px"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="270dp"
+                android:layout_height="140dp"
+                android:text="Estudio Socioeconómico"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.206"
+                android:layout_marginBottom="100px"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="270dp"
+                android:layout_height="140dp"
+                android:text="Entrevista"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.507"
+                android:layout_marginBottom="260px"/>
+
+        </TableLayout>
+    </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
