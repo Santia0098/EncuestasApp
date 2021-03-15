@@ -45,7 +45,6 @@
         android:textColorHighlight="@color/purple_200"
         android:textColorHint="@color/white"
         android:textColorLink="@color/black"
-        android:textCursorDrawable="@drawable/ic_launcher_background"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
