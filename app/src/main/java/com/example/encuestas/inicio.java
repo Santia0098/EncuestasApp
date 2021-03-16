@@ -10,6 +10,7 @@ import android.widget.Button;
 public class inicio extends AppCompatActivity {
 
     Button ficha;
+    Button estsoc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,15 @@ public class inicio extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(inicio.this, FichaIdentificacion.class);
                 startActivity(i);
+            }
+        });
+
+        estsoc = (Button) findViewById(R.id.btn_socioe);
+        estsoc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(inicio.this, EstudioSocioeconomico.class);
+                startActivity(in);
             }
         });
     }
