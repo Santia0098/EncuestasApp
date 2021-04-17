@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.encuestas">
-    
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Encuestas">
-        <activity android:name=".EstudioSocioeconomico2"></activity>
+        <activity android:name=".f_entrevista8"></activity>
+        <activity android:name=".f_entrevista7" />
+        <activity android:name=".f_entrevista6" />
+        <activity android:name=".f_entrevista5" />
+        <activity android:name=".f_entrevista4" />
+        <activity android:name=".f_entrevista3" />
+        <activity android:name=".f_entrevista2" />
+        <activity android:name=".f_entrevista" />
+        <activity android:name=".EstudioSocioeconomico2" />
         <activity android:name=".EstudioSocioeconomico" />
         <activity android:name=".FichaIdentificacion2" />
         <activity android:name=".FichaIdentificacion" />

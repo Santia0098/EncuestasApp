@@ -11,6 +11,7 @@ public class inicio extends AppCompatActivity {
 
     Button ficha;
     Button estsoc;
+    Button fentrevista;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,15 @@ public class inicio extends AppCompatActivity {
             public void onClick(View v) {
                 Intent in = new Intent(inicio.this, EstudioSocioeconomico.class);
                 startActivity(in);
+            }
+        });
+
+        fentrevista = (Button) findViewById(R.id.button3);
+        fentrevista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(inicio.this, f_entrevista.class);
+                startActivity(i);
             }
         });
     }
